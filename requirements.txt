@@ -11,3 +11,4 @@ pandas==2.2.2
 matplotlib==3.8.4
 jsonschema==4.21.1
 jsonschema-specifications==2023.12.1
+dlib @ file:///F:/temp/Dlib_Windows_Python3.x-main/Dlib_Windows_Python3.x-main/dlib-19.24.99-cp312-cp312-win_amd64.whl#sha256=20c62e606ca4c9961305f7be3d03990380d3e6c17f8d27798996e97a73271862
