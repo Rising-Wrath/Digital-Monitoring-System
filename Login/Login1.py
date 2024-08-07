@@ -18,6 +18,18 @@ import webbrowser
 #     #root.destroy()
 #     sp.run(["python", "F:\MCA PROJECT\Final\Teacher\Timetracker.py"])
 
+
+# Function to get distinct student IDs
+def get_student_ids(conn):
+    try:
+        cursor = conn.cursor()
+        student_ids = cursor.execute("SELECT DISTINCT StudentID FROM Students").fetchall()
+        return [id[0] for id in student_ids]
+    except sqlite3.Error as e:
+        st.error(f"Error fetching student IDs: {e}")
+        return []
+
+
 def open_student_page():
     url = "http://localhost:8502"
     webbrowser.open(url)
