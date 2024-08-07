@@ -22,7 +22,7 @@ streamlit-webrtc==0.47.7
 
 
 XlsxWriter==3.2.0
-cv2
+
 PIL
 NumPy 
 dlib
